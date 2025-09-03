@@ -86,8 +86,15 @@
 <head>
     <h1>Health issues</h1>
     <form action="#" method="post">
-    
-         <label for="description">Description:</label><br>
+        <label for="health_issue">Health Issue:</label><br>
+        <input type="radio" id="health_issue1" name="health_issue" value="allergy" required>
+        <label for="health_issue1">Allergy</label><br>
+        <input type="radio" id="health_issue2" name="health_issue" value="asthma" required>
+        <label for="health_issue2">Asthma</label><br>
+        <input type="radio" id="health_issue3" name="health_issue" value="other" required>
+        <label for="health_issue3">Other</label><br>
+
+        <label for="description">Description:</label><br>
         <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
 
         <input type="submit" value="Submit" style="color: red;">
