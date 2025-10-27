@@ -1,0 +1,1896 @@
+.frame {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Landing Page Wrapper */
+.frame .landing-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative; /* changed from absolute */
+}
+
+/* Landing Page */
+.frame .landing-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Generic Container */
+.frame .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Section: I'm Emery Myself */
+.frame .im-emery-my-self {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  background-color: #ffffff;
+}
+
+/* Inner Container */
+.frame .div-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+/* Background Image or Color */
+.frame .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes images scale properly */
+}
+
+/* =======================
+   📱 MEDIA QUERIES
+   ======================= */
+@media (max-width: 1200px) {
+  .frame .im-emery-my-self {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .frame .landing-page-wrapper {
+    gap: 5px;
+  }
+
+  .frame .im-emery-my-self {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .frame .div-2 {
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .frame .im-emery-my-self {
+    padding: 20px 10px;
+  }
+
+  .frame .landing-page {
+    align-items: center;
+  }
+}
+/* === NAVIGATION BAR === */
+.frame .navigation-bar {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #000000;
+  backdrop-filter: blur(2px) brightness(100%) saturate(100%);
+  -webkit-backdrop-filter: blur(2px) brightness(100%) saturate(100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.13),
+    inset -1px 0 1px rgba(0, 0, 0, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+/* === BUTTON / MENU SECTION === */
+.frame .div-3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 100px;
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.frame .div-3:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* === TEXT === */
+.frame .text-wrapper {
+  font-family: "Urbanist-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #161a1a;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* === ICON === */
+.frame .basil-download-solid {
+  width: 22px;
+  height: 22px;
+}
+
+/* =============================
+   📱 MEDIA QUERIES
+   ============================= */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .frame .navigation-bar {
+    height: 80px;
+    padding: 0 4%;
+  }
+
+  .frame .div-3 {
+    padding: 12px 24px;
+    gap: 10px;
+  }
+
+  .frame .text-wrapper {
+    font-size: 1rem;
+  }
+
+  .frame .basil-download-solid {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .frame .navigation-bar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .frame .div-3 {
+    padding: 10px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .frame .text-wrapper {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .frame .navigation-bar {
+    padding: 8px 12px;
+  }
+
+  .frame .div-3 {
+    gap: 8px;
+    padding: 8px 16px;
+  }
+
+  .frame .text-wrapper {
+    font-size: 0.85rem;
+  }
+
+  .frame .basil-download-solid {
+    width: 18px;
+    height: 18px;
+  }
+}
+/* === INNER CONTENT CONTAINER === */
+.frame .inner-content {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  min-height: 80vh; /* adaptive height */
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 40px 5%;
+  box-sizing: border-box;
+}
+
+/* === BACKGROUND / VECTOR LAYERS === */
+.frame .vector {
+  position: absolute;
+  width: 75%;
+  height: auto;
+  top: 62%;
+  left: 12.5%;
+  max-width: 100%;
+}
+
+.frame .img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 8%;
+  left: 25%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* === LEFT TEXT SECTIONS === */
+.frame .i-m-sonam-wangmo-wrapper,
+.frame .div-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  left: 5%;
+  flex-wrap: wrap;
+}
+
+.frame .i-m-sonam-wangmo-wrapper {
+  top: 12%;
+}
+
+.frame .div-wrapper {
+  top: 50%;
+}
+
+.frame .p {
+  font-family: "Urbanist-Regular", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #76797a;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+/* === IMAGE CONTAINER / RIGHT SIDE === */
+.frame .rectangle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.frame .rectangle {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =============================
+   📱 MEDIA QUERIES
+   ============================= */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .frame .inner-content {
+    padding: 30px 4%;
+  }
+
+  .frame .p {
+    font-size: 1.25rem;
+  }
+
+  .frame .rectangle {
+    max-width: 400px;
+  }
+
+  .frame .i-m-sonam-wangmo-wrapper,
+  .frame .div-wrapper {
+    left: 4%;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .frame .inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .frame .vector,
+  .frame .img {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .frame .rectangle-wrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .frame .i-m-sonam-wangmo-wrapper,
+  .frame .div-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .frame .rectangle {
+    max-width: 100%;
+  }
+
+  .frame .p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .frame .inner-content {
+    padding: 15px;
+  }
+
+  .frame .p {
+    font-size: 1rem;
+  }
+
+  .frame .rectangle {
+    max-width: 90%;
+  }
+
+  .frame .i-m-sonam-wangmo-wrapper,
+  .frame .div-wrapper {
+    gap: 5px;
+  }
+}
+/* === WHO I AM SECTION === */
+.frame .who-i-am {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  background-color: #ecf8ff;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+/* === INNER CONTENT CONTAINER === */
+.frame .inner-content-2 {
+  display: flex;
+  flex: 1;
+  gap: 24px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 40px 5%;
+}
+
+/* === LEFT ASIDE (colored panel) === */
+.frame .left-aside {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffeed9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+/* === IMAGE / VECTOR AREA === */
+.frame .div-4 {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  text-align: center;
+}
+
+.frame .vector-2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  object-fit: contain;
+}
+
+/* === TEXT INSIDE LEFT PANEL === */
+.frame .text-wrapper-2 {
+  display: block;
+  margin-top: 20px;
+  font-family: "Urbanist-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #161a1a;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+/* === MAIN HEADING (I’m Sonam Wangmo) === */
+.frame .i-m-sonam-wangmo {
+  position: relative;
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: 0;
+  font-family: "Urbanist-ExtraBold", Helvetica, sans-serif;
+  font-weight: 800;
+  color: #161a1a;
+  -webkit-text-stroke: 1px #ffffff;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* =============================
+   📱 MEDIA QUERIES
+   ============================= */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .frame .who-i-am {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 4%;
+  }
+
+  .frame .inner-content-2 {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .frame .left-aside {
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .frame .i-m-sonam-wangmo {
+    font-size: 3rem;
+  }
+
+  .frame .text-wrapper-2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .frame .who-i-am {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .frame .i-m-sonam-wangmo {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .frame .left-aside {
+    padding: 20px 10px;
+  }
+
+  .frame .text-wrapper-2 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .frame .i-m-sonam-wangmo {
+    font-size: 1.8rem;
+  }
+
+  .frame .text-wrapper-2 {
+    font-size: 1rem;
+  }
+
+  .frame .div-4 {
+    max-width: 200px;
+  }
+}
+/* === TEXT WRAPPER (Main Heading) === */
+.frame .text-wrapper-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: "Urbanist-Black", Helvetica, sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 4rem; /* scalable font */
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* === SUBSECTION CONTAINER === */
+.frame .div-5 {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* === CIRCLE / VECTOR SHAPE === */
+.frame .vector-3 {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* === TEXT BELOW VECTOR === */
+.frame .text-wrapper-4 {
+  margin-top: 20px;
+  font-family: "Urbanist-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #161a1a;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+/* === HARD WORK TEXT (Inside Circle or Below) === */
+.frame .hard-work {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Urbanist-Black", Helvetica, sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.2;
+  white-space: normal;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* =============================
+   📱 MEDIA QUERIES
+   ============================= */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .frame .text-wrapper-3 {
+    font-size: 3rem;
+    margin-top: 80px;
+  }
+
+  .frame .hard-work {
+    font-size: 2.5rem;
+  }
+
+  .frame .text-wrapper-4 {
+    font-size: 1.25rem;
+  }
+
+  .frame .div-5 {
+    max-width: 240px;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .frame .text-wrapper-3 {
+    font-size: 2.2rem;
+    margin-top: 60px;
+  }
+
+  .frame .hard-work {
+    font-size: 2rem;
+  }
+
+  .frame .vector-3 {
+    max-width: 200px;
+  }
+
+  .frame .div-5 {
+    margin: 40px auto;
+  }
+
+  .frame .text-wrapper-4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .frame .text-wrapper-3 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+
+  .frame .hard-work {
+    font-size: 1.6rem;
+  }
+
+  .frame .text-wrapper-4 {
+    font-size: 1rem;
+  }
+
+  .frame .div-5 {
+    max-width: 180px;
+  }
+}
+/* Container holding the boxes */
+.frame .boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* space between boxes */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+/* Each box (previously div-6, div-7, etc.) */
+.frame .div-6,
+.frame .div-7 {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+
+/* Circle/vector background */
+.frame .vector-4 {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+/* Big title text (e.g., Hard Work) */
+.frame .text-wrapper-5 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Urbanist-Black", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* Subtext */
+.frame .text-wrapper-6 {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Urbanist-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #161a1a;
+  font-size: 1.2rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .frame .boxes-container {
+    gap: 1.5rem;
+  }
+
+  .frame .div-6,
+  .frame .div-7 {
+    width: 45%;
+    height: 300px;
+  }
+
+  .frame .text-wrapper-5 {
+    font-size: 2.5rem;
+  }
+
+  .frame .text-wrapper-6 {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .frame .boxes-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .frame .div-6,
+  .frame .div-7 {
+    width: 80%;
+    height: 280px;
+  }
+
+  .frame .text-wrapper-5 {
+    font-size: 2rem;
+  }
+
+  .frame .text-wrapper-6 {
+    font-size: 0.95rem;
+  }
+}
+/* ====== Base container ====== */
+.frame .right-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+/* ====== Heading ====== */
+.frame .text-wrapper-9 {
+  font-family: "Urbanist-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #161a1a;
+  font-size: 5rem;
+  text-align: right;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+/* ====== Sub-heading / paragraph ====== */
+.frame .hi-i-m-sonam-wangmo {
+  font-family: "Urbanist-Regular", Helvetica;
+  font-weight: 400;
+  color: #161a1a;
+  font-size: 1.5rem;
+  text-align: right;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* ====== Buttons / link area ====== */
+.frame .div-9 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ====== Individual button ====== */
+.frame .div-10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  background-color: #ffeed9;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.frame .div-10:hover {
+  background-color: #ffd9a6;
+}
+
+/* ====== Button icon ====== */
+.frame .vector-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame .vector-5 {
+  width: 20px;
+  height: 24px;
+}
+
+/* ====== Button text ====== */
+.frame .text-wrapper-10 {
+  font-family: "Urbanist-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #161a1a;
+  font-size: 1.2rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ====== Text Wrappers for headings (previously .text-wrapper-7, .text-wrapper-8) ====== */
+.frame .text-wrapper-7 {
+  font-family: "Urbanist-Black", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.frame .text-wrapper-8 {
+  font-family: "Urbanist-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #161a1a;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ====== Responsive breakpoints ====== */
+
+/* Tablet (medium screens) */
+@media (max-width: 1024px) {
+  .frame .right-aside {
+    align-items: center;
+    text-align: center;
+  }
+
+  .frame .text-wrapper-9 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .frame .hi-i-m-sonam-wangmo {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .frame .div-9 {
+    justify-content: center;
+  }
+}
+
+/* Mobile (small screens) */
+@media (max-width: 600px) {
+  .frame .right-aside {
+    width: 100%;
+    padding: 2rem 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .frame .text-wrapper-9 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .frame .hi-i-m-sonam-wangmo {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .frame .div-10 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .frame .text-wrapper-10 {
+    font-size: 1rem;
+  }
+
+  .frame .vector-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* ====== Section container ====== */
+.frame .services-i-offer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #39a7ff;
+  overflow: hidden;
+}
+
+/* ====== Background image ====== */
+.frame .background-2 {
+  position: absolute;
+  inset: 0;
+  background-image: url(./img/rectangle-4.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+}
+
+/* ====== Decorative vectors (optional) ====== */
+.frame .vector-6 {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 80px;
+  height: auto;
+  max-width: 10vw;
+}
+
+.frame .vector-7 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: auto;
+  opacity: 0.5;
+}
+
+/* ====== Text area ====== */
+.frame .div-11 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 4rem 2rem;
+  z-index: 2;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* ====== Heading ====== */
+.frame .text-wrapper-11 {
+  font-family: "Urbanist-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #161a1a;
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  line-height: 1.2;
+  white-space: normal;
+}
+
+/* ====== Subheading / paragraph ====== */
+.frame .text-wrapper-12 {
+  font-family: "Urbanist-Regular", Helvetica;
+  font-weight: 400;
+  color: #161a1a;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  line-height: 1.6;
+  max-width: 1000px;
+  margin-top: 1rem;
+}
+
+/* ====== Services grid ====== */
+.frame .service {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem 6rem;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Example of a service card (optional) */
+.frame .service-card {
+  background: #ffffffcc;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.frame .service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Responsive Breakpoints ====== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .frame .div-11 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .frame .text-wrapper-12 {
+    text-align: center;
+  }
+
+  .frame .vector-7 {
+    width: 35%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .frame .div-11 {
+    padding: 2rem 1rem;
+  }
+
+  .frame .text-wrapper-11 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .frame .text-wrapper-12 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .frame .service {
+    padding: 2rem 1rem 4rem;
+    gap: 1.5rem;
+  }
+
+  .frame .vector-6 {
+    width: 50px;
+    right: 3%;
+  }
+}
+/* ===== Section Content Wrappers ===== */
+.frame .service-2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== Left/Right Block Alternation ===== */
+.frame .service-2.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ===== Image container ===== */
+.frame .img-wrapper,
+.frame .rectangle-wrapper-2 {
+  flex: 1 1 500px;
+  max-width: 600px;
+  aspect-ratio: 4 / 3;
+  background-color: #ecf8ff;
+  border-radius: 132px 132px 132px 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame .rectangle-wrapper-2 {
+  border-radius: 0px 132px 132px 132px;
+}
+
+.frame .rectangle-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Text area ===== */
+.frame .div-12 {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.frame .text-wrapper-13 {
+  font-family: "Urbanist-Regular", Helvetica;
+  font-weight: 400;
+  color: #d1d2d3;
+  font-size: clamp(2rem, 6vw, 5.5rem);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.frame .text-wrapper-14 {
+  font-family: "Urbanist-Bold", Helvetica;
+  font-weight: 700;
+  color: #161a1a;
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  line-height: 1.2;
+}
+
+/* ===== Button / Download Section ===== */
+.frame .div-13 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background: #ffffffcc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.frame .div-13:hover {
+  transform: translateY(-3px);
+  background: #fff;
+}
+
+.frame .basil-download-solid-2 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #39a7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame .vector-8 {
+  width: 26px;
+  height: 22px;
+}
+
+/* ===== Responsive Layout ===== */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .frame .service-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .frame .div-12 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .frame .text-wrapper-13,
+  .frame .text-wrapper-14 {
+    text-align: center;
+  }
+
+  .frame .img-wrapper,
+  .frame .rectangle-wrapper-2 {
+    max-width: 500px;
+    border-radius: 80px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .frame .service-2 {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .frame .img-wrapper,
+  .frame .rectangle-wrapper-2 {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 60px;
+  }
+
+  .frame .text-wrapper-13 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .frame .text-wrapper-14 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .frame .basil-download-solid-2 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .frame .vector-8 {
+    width: 20px;
+    height: 18px;
+  }
+
+  .frame .div-13 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* ===== Work Experience Section ===== */
+.frame .work-experience {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #39a7ff;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+/* Decorative Vector (optional) */
+.frame .vector-9 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  max-width: 400px;
+  height: auto;
+  opacity: 0.8;
+}
+
+/* ===== Heading Section ===== */
+.frame .div-14 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.frame .text-wrapper-15 {
+  font-family: "Urbanist-Bold", Helvetica;
+  font-weight: 700;
+  color: #161a1a;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 1.2;
+  white-space: normal;
+  text-align: center;
+}
+
+/* ===== Work Experience Items ===== */
+.frame .service-3,
+.frame .service-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+/* Use a parent flex container to position service blocks side by side */
+.frame .work-experience-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== Optional Rectangle Image ===== */
+.frame .rectangle-3 {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .frame .work-experience {
+    padding: 4rem 2rem;
+  }
+
+  .frame .work-experience-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .frame .service-3,
+  .frame .service-4 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .frame .text-wrapper-15 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .frame .work-experience {
+    padding: 3rem 1rem;
+  }
+
+  .frame .text-wrapper-15 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .frame .vector-9 {
+    width: 50%;
+    opacity: 0.4;
+  }
+
+  .frame .service-3,
+  .frame .service-4 {
+    max-width: 100%;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+/* ===== General Text Wrappers ===== */
+.frame .text-wrapper-16,
+.frame .text-wrapper-18,
+.frame .text-wrapper-20 {
+  font-family: "Urbanist-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  white-space: normal;
+  text-align: right;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(2rem, 6vw, 5.5rem); /* scales smoothly */
+}
+
+.frame .text-wrapper-17,
+.frame .text-wrapper-19,
+.frame .text-wrapper-21 {
+  font-family: "Urbanist-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: right;
+  width: 100%;
+  max-width: 824px;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  margin-top: 0.5rem;
+}
+
+/* ===== Containers ===== */
+.frame .div-15 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* keeps text right-aligned */
+  gap: 4rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* removed fixed absolute */
+}
+
+.frame .div-16,
+.frame .div-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 1024px) {
+  .frame .div-15 {
+    align-items: center; /* center on tablets */
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .frame .text-wrapper-16,
+  .frame .text-wrapper-18,
+  .frame .text-wrapper-20 {
+    text-align: center;
+  }
+
+  .frame .text-wrapper-17,
+  .frame .text-wrapper-19,
+  .frame .text-wrapper-21 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .frame .div-15 {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .frame .text-wrapper-16,
+  .frame .text-wrapper-18,
+  .frame .text-wrapper-20 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+
+  .frame .text-wrapper-17,
+  .frame .text-wrapper-19,
+  .frame .text-wrapper-21 {
+    font-size: clamp(0.9rem, 3vw, 1.5rem);
+  }
+}
+/* ===== Latest Projects Section ===== */
+.frame .latest-projects {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ===== Section Heading ===== */
+.frame .div-wrapper-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+}
+
+.frame .text-wrapper-22 {
+  font-family: "Urbanist-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #161a1a;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 1.2;
+  white-space: normal;
+}
+
+/* ===== Timeline / Line ===== */
+.frame .div-17 {
+  position: relative;
+  width: 4px;
+  background-color: #00000033; /* subtle line */
+  margin: 0 auto;
+  min-height: 60vh;
+}
+
+.frame .line {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+/* ===== Timeline Items / Vectors ===== */
+.frame .vector-10,
+.frame .vector-11,
+.frame .vector-12 {
+  position: absolute;
+  width: 44px;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.frame .vector-10 { top: 80px; }
+.frame .vector-11 { top: 40%; }
+.frame .vector-12 { top: 80%; left: 10%; transform: none; }
+
+/* ===== Arrows / Accents ===== */
+.frame .arrow {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto;
+}
+
+/* ===== Project Group Image / SVGs ===== */
+.frame .group {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin: 2rem auto;
+  background-image: url(./img/vector-19.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.frame .vector-13,
+.frame .vector-14,
+.frame .vector-15 {
+  position: absolute;
+  height: auto;
+}
+
+.frame .vector-13 { width: 4%; top: 72%; left: 0; }
+.frame .vector-14 { width: 17%; top: 87%; left: 0; }
+.frame .vector-15 { width: 30%; bottom: -5%; right: 10%; }
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 1024px) {
+  .frame .text-wrapper-22 {
+    text-align: center;
+  }
+
+  .frame .div-17 {
+    min-height: 50vh;
+  }
+
+  .frame .vector-10,
+  .frame .vector-11,
+  .frame .vector-12 {
+    width: 30px;
+    height: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .frame .arrow {
+    width: 120px;
+    height: 120px;
+  }
+
+  .frame .group {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .frame .text-wrapper-22 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .frame .div-17 {
+    min-height: 40vh;
+  }
+
+  .frame .vector-10,
+  .frame .vector-11,
+  .frame .vector-12 {
+    width: 20px;
+    height: 25px;
+  }
+
+  .frame .arrow {
+    width: 100px;
+    height: 100px;
+  }
+
+  .frame .group {
+    max-width: 100%;
+  }
+
+  .frame .vector-15 {
+    width: 50%;
+    bottom: -3%;
+    right: 5%;
+  }
+}
+/* ===== Want to Work With Me Section ===== */
+.frame .want-to-work-with-me {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffeed9;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+/* ===== Large Content Blocks ===== */
+.frame .div-18,
+.frame .div-19,
+.frame .div-20 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto;
+}
+
+/* ===== Column Wrappers ===== */
+.frame .div-wrapper-4,
+.frame .div-wrapper-5,
+.frame .div-21 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1 1 300px; /* allow columns to shrink on small screens */
+  width: 100%;
+}
+
+/* ===== Text Wrappers ===== */
+.frame .text-wrapper-23,
+.frame .text-wrapper-24 {
+  font-family: "Urbanist-Bold", Helvetica;
+  font-weight: 700;
+  color: #161a1a;
+  font-size: clamp(2.5rem, 6vw, 5.5rem); /* scales with screen */
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+/* ===== Decorative Vector ===== */
+.frame .vector-16 {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 3rem auto 0 auto;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 1024px) {
+  .frame .div-18,
+  .frame .div-19,
+  .frame .div-20 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .frame .div-wrapper-4,
+  .frame .div-wrapper-5,
+  .frame .div-21 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .frame .text-wrapper-23,
+  .frame .text-wrapper-24 {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .frame .want-to-work-with-me {
+    padding: 3rem 1rem;
+  }
+
+  .frame .text-wrapper-23,
+  .frame .text-wrapper-24 {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+  }
+
+  .frame .vector-16 {
+    max-width: 80%;
+  }
+}
+/* ===== Education / Achievements Section ===== */
+.frame .div-22,
+.frame .div-24,
+.frame .div-25 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.frame .div-23,
+.frame .div-26 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1 1 200px; /* columns shrink naturally */
+}
+
+/* ===== Circular Icons ===== */
+.frame .ic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #161a1a;
+  position: relative;
+}
+
+.frame .vector-17,
+.frame .vector-19,
+.frame .vector-21,
+.frame .vector-22,
+.frame .vector-23 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===== Text Wrappers ===== */
+.frame .text-wrapper-25,
+.frame .college-of-science,
+.frame .text-wrapper-27,
+.frame .i-m-always-happy-to,
+.frame .text-wrapper-26 {
+  font-family: "Urbanist", Helvetica;
+  font-weight: 400;
+  color: #161a1a;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.frame .text-wrapper-25,
+.frame .text-wrapper-27,
+.frame .college-of-science {
+  font-weight: 800;
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+
+.frame .i-m-always-happy-to,
+.frame .text-wrapper-26 {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+/* ===== Lines ===== */
+.frame .line-2,
+.frame .line-3 {
+  width: 90%;
+  height: 2px;
+  background-color: #161a1a;
+  margin: 2rem auto;
+}
+
+/* ===== Footer Section ===== */
+.frame .footer {
+  position: relative;
+  width: 100%;
+  background-color: #ffeed9;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frame .rectangle-4 {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(180deg, rgba(255, 238, 217, 1) 12%, rgba(255, 238, 217, 0) 100%);
+}
+
+.frame .group-2 {
+  position: relative;
+  width: 100%;
+  max-width: 140%;
+  height: auto;
+}
+
+.frame .vector-20 {
+  position: absolute;
+  width: 5%;
+  height: auto;
+  top: 8%;
+  left: 5%;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 1024px) {
+  .frame .div-22,
+  .frame .div-24,
+  .frame .div-25 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frame .text-wrapper-25,
+  .frame .college-of-science,
+  .frame .text-wrapper-27 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .frame .text-wrapper-25,
+  .frame .college-of-science,
+  .frame .text-wrapper-27 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+
+  .frame .i-m-always-happy-to,
+  .frame .text-wrapper-26 {
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+  }
+
+  .frame .ic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .frame .line-2,
+  .frame .line-3 {
+    width: 95%;
+  }
+}

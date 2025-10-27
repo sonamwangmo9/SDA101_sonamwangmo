@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <style>
+    .error { color: red; font-size: 0.9em; }
+    input:invalid { border-color: red; }
+    input:valid { border-color: green; }
+  </style>
+</head>
+<body>
+  <h2>Register</h2>
+  <form id="registrationForm">
+    <label>Username:</label><br />
+    <input type="text" id="username" /><br />
+    <span id="usernameError" class="error"></span><br />
+
+    <label>Email:</label><br />
+    <input type="email" id="email" /><br />
+    <span id="emailError" class="error"></span><br />
+
+    <label>Password:</label><br />
+    <input type="password" id="password" /><br />
+    <span id="passwordError" class="error"></span><br />
+
+    <label>Confirm Password:</label><br />
+    <input type="password" id="confirmPassword" /><br />
+    <span id="confirmPasswordError" class="error"></span><br />
+
+    <button type="submit" id="submitBtn" disabled>Submit</button>
+  </form>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

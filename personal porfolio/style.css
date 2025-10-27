@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  background: #f8fcff;
+}
+
+.hero-text {
+  flex: 1 1 45%;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text span {
+  color: #000;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  color: #444;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cv-btn {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background: #444;
+}
+
+.hero-img {
+  flex: 1 1 40%;
+  text-align: right;
+}
+
+.hero-img img {
+  width: 260px;
+  border-radius: 12px;
+}
+
+/* ===== INFO BOXES ===== */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #fff;
+  padding: 40px 8%;
+  gap: 20px;
+}
+
+.info-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: scale(1.05);
+}
+
+.pink { background: #f9a8d4; }
+.green { background: #34d399; }
+.orange { background: #f97316; }
+.blue { background: #60a5fa; }
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 60px 10%;
+  background: #f0f9ff;
+  border-top: 2px solid #e0eaff;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .info-section {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .info-box {
+    width: 120px;
+    height: 120px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f9ff;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.majors {
+  padding: 60px 8%;
+  background: #f0f9ff;
+}
+
+.major-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.major-header h2 {
+  font-size: 2rem;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.major-header p {
+  color: #555;
+  font-size: 0.95rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* ===== GRID ===== */
+.major-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.major-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.major-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.major-number {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.major-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.major-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.tag {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .major-header {
+    text-align: center;
+  }
+  .major-header p {
+    margin: 0 auto;
+  }
+  .major-number {
+    font-size: 1rem;
+  }
+  .major-card img {
+    height: 140px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f7faff;
+  color: #222;
+}
+
+.career-section {
+  background: linear-gradient(135deg, #dbeeff, #c3e5ff);
+  padding: 60px 8%;
+  border-top: 4px solid #b3dcff;
+}
+
+.career-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* ===== LEFT SIDE ===== */
+.career-left {
+  flex: 1 1 45%;
+}
+
+.career-left h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #0b3954;
+}
+
+.timeline {
+  border-left: 3px solid #0b3954;
+  padding-left: 25px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #0b3954;
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  color: #0b3954;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ===== RIGHT SIDE ===== */
+.career-right {
+  flex: 1 1 45%;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.career-right h2 {
+  font-size: 1.6rem;
+  color: #0b3954;
+  margin-bottom: 15px;
+}
+
+.career-right p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .career-container {
+    flex-direction: column;
+  }
+
+  .career-left, .career-right {
+    flex: 1 1 100%;
+  }
+
+  .career-right {
+    margin-top: 30px;
+  }
+
+  .career-left h2, .career-right h2 {
+    text-align: center;
+  }
+
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .timeline-item::before {
+    display: none;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* ---------------------- */
+/*  Future Goals Section  */
+/* ---------------------- */
+.goals-section {
+  max-width: 900px;
+  background: #ffffff;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #0f172a;
+  border-left: 6px solid #3b82f6;
+  padding-left: 10px;
+}
+
+.goal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.goal-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #f1f5f9;
+  padding: 10px;
+}
+
+.goal-info h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+/* ---------------------- */
+/*  About Me Footer       */
+/* ---------------------- */
+.about-me {
+  background: #fef7ec;
+  padding: 3rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.footer-container h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.footer-container p {
+  color: #4b5563;
+  margin: 0.4rem 0 1.5rem;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+  color: #2563eb;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #1e293b;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .goal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .goal-logo img {
+    width: 70px;
+    height: 70px;
+  }
+}
+/* ====== FUTURE DEVELOPMENT GOALS ====== */
+.goals-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #111;
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual Goal Cards */
+.goal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  max-width: 800px;
+  margin: 25px auto;
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.goal:hover {
+  transform: translateY(-5px);
+  background: #f1f9f7;
+}
+
+/* Logo */
+.goal-logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* Goal Info */
+.goal-info h3 {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* ====== FOOTER SECTION ====== */
+.about-me {
+  background: #fff4e6;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.footer-container p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+  color: #ff8a00;
+}
+
+/* Social Links */
+.social-links a {
+  margin: 0 10px;
+  font-size: 1.6rem;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff8a00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .goal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .goal-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .goal-info h3 {
+    font-size: 1rem;
+  }
+}
